@@ -1,0 +1,34 @@
+
+.form-container {
+   display: block;
+   margin: auto;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   background-color: white;
+   box-shadow: 0 0 10px 0 lightgrey;
+   margin-top: 20px;
+}
+
+.input-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    display: block;
+    margin: auto;
+    background-color: white;
+    box-shadow: 0 0 10px 0 lightgray;
+}
+
+.calender{
+    margin: 15px;
+}
+
+.button {
+    display: flex;
+    margin-top: 40px;
+    justify-content: center;
+}
+
+
