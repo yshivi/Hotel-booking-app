@@ -1,6 +1,5 @@
 import Card from '@mui/material/Card';
 import CardMedia from '@mui/material/CardMedia';
-import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import { Button, Rating } from '@mui/material';
 import * as React from 'react';
@@ -13,7 +12,8 @@ const HotelCard = ({ item, hotelList }) => {
 
   const newObj = {
     hotelList: hotelList,
-    hotelId: item.id
+    hotelId: item.id,
+    hotelName: item.hotelName
   }
   return (
     <div>

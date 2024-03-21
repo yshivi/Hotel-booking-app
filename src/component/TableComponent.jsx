@@ -10,7 +10,6 @@ import { useLocation } from 'react-router-dom';
 import { Link } from "react-router-dom";
 import Button from '@mui/material/Button';
 import { Typography } from '@mui/material';
-import '../CSS/table.css';
 
 
 
@@ -32,20 +31,21 @@ function TableComponent() {
     // const {firstName, lastName, phoneNumber,email,room,place} = state 
     return (
         <div>
-            
+
             <nav className='nav-bar'>
                 <h1>Booking.com</h1>
             </nav>
-            <Typography  variant="h3" >
+            <div id='text'>
+            <Typography variant="h3"  >
                 Thank You
             </Typography>
-            <div className='table'>
+            </div>
             <TableContainer component={Paper}>
-                <Table sx={{ minWidth: 650 }} aria-label="simple table">
+                <Table sx={{ minWidth: 350 }} aria-label="simple table">
                     <TableHead>
                         <TableRow>
-                            <TableCell>Dessert (100g serving)</TableCell>
-                            <TableCell align="right">Calories</TableCell>
+                            <TableCell>Name</TableCell>
+                            <TableCell align="right">Details</TableCell>
                         </TableRow>
                     </TableHead>
                     <TableBody>
@@ -58,20 +58,15 @@ function TableComponent() {
                                     {row.name}
                                 </TableCell>
                                 <TableCell align="right">{row.calories}</TableCell>
-                                <TableCell align="right">{row.fat}</TableCell>
-                                <TableCell align="right">{row.carbs}</TableCell>
-                                <TableCell align="right">{row.protein}</TableCell>
-
                             </TableRow>
                         ))}
                     </TableBody>
                 </Table>
-
             </TableContainer>
             <Link to={'/'}><Button variant="contained">Home</Button ></Link>
 
-            </div>
         </div>
+
     );
 }
 

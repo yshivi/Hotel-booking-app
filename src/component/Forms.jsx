@@ -7,6 +7,7 @@ const Forms = () => {
     const navigate = useNavigate();
     const hotelList = location.state.hotelList
     const hotelId = location.state.hotelId
+    const hotelName=location.state.hotelName
     console.log(hotelList);
     console.log(hotelId);
     const [formData, setFormData] = useState({
